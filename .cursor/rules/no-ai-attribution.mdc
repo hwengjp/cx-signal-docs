@@ -1,0 +1,29 @@
+---
+description: コミットやドキュメントに Cursor / AI 作成の表記を残さない
+alwaysApply: true
+---
+
+# AI 作成の表記を残さない
+
+Cursor やその他の AI で作成・編集したことを、コミットやドキュメントに書かない。
+
+## 禁止
+
+- コミットメッセージ、PR、CHANGELOG、README、取説への「Cursor で作成」「AI が生成」などの記載
+- `Co-authored-by: Cursor` や `Made with Cursor` などのトレーラー
+- 生成元ツールの宣伝文やフッター
+
+## よい例
+
+```text
+シクロクロス用信号機の取扱説明書を追加する。
+```
+
+## 悪い例
+
+```text
+Add manual.
+
+Made-with: Cursor
+Co-authored-by: Cursor <cursoragent@cursor.com>
+```
